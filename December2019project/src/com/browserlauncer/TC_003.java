@@ -9,7 +9,7 @@ public class TC_003 extends BaseTest
 		
 		launchBrowser("chromebrowser");
 		
-		launchUrl("axisbankurl");
+		launchUrl("amazonurl");
 		
 		driver.manage().window().maximize();
 
