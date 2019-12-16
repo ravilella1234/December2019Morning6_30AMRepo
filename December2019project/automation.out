@@ -1,0 +1,10 @@
+initializing the Properties files (data, or, envronments, log4jconfig) ........
+Opened the browser :- chrome
+Navigated to URl :- https://www.amazon.in
+Selected the option :- Books by using the locator:- searchDropdownBox
+Entered the text :- Harry potter by using the locator :- field-keywords
+Clicked on Element by using the Locator :- //div[contains(@class,'nav-search-submit nav-sprite')]//input[contains(@class,'nav-input')]
+initializing the Properties files (data, or, envronments, log4jconfig) ........
+Opened the browser :- chrome
+Navigated to URl :- https://www.amazon.in
+Selected the option :- Books by using the locator:- searchDropdownBox
