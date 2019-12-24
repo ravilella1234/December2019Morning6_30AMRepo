@@ -2,6 +2,8 @@ package com.browserlauncer;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -38,13 +40,36 @@ public class TC_006 extends BaseTest
 		 */
 		
 		
-		WebElement loc = driver.findElement(By.id("twotabsearchtextbox"));
+		/*
+		 * WebElement loc = driver.findElement(By.id("twotabsearchtextbox"));
+		 * 
+		 * loc.sendKeys("sony"); String val = loc.getAttribute("value");
+		 * System.out.println("Text is :" + val);
+		 */
 		
-		loc.sendKeys("sony");
-		String val = loc.getAttribute("value");
-		System.out.println("Text is :" + val);
 		
-
+		String actualLink =driver.findElement(By.xpath("//a[contains(text(),'AmazonBasics')]")).getText();  
+		String expectedLink="AmazonBasic";
+		
+		System.out.println("Actual Link : "+ actualLink);
+		System.out.println("Expected Link : "+ expectedLink);
+		
+		//Assert.assertEquals(actualLink, expectedLink);
+		//Assert.assertTrue(actualLink.equals(expectedLink), "Both links are not equal....");
+		
+		SoftAssert s=new SoftAssert();
+		//s.assertEquals(actualLink, expectedLink);
+		s.assertTrue(actualLink.equals(expectedLink), "Both links are not equal....");
+		
+		s.assertTrue(false, "err1");
+		
+		s.assertTrue(true, "err2");
+		
+		s.assertTrue(false, "err3");
+		
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("sony");
+		
+		s.assertAll();
 	}
 
 }
