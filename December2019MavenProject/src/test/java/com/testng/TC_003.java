@@ -11,7 +11,7 @@ import com.relevantcodes.extentreports.LogStatus;
 public class TC_003 extends BaseTest
 {
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"regression"})
 	@Parameters("browser")
   public void startProcess(String btype) throws Exception 
   {
@@ -29,7 +29,7 @@ public class TC_003 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups = {"regression"})
   public void amazon() 
   {
 	  System.out.println("amazon Test.....");
@@ -45,7 +45,7 @@ public class TC_003 extends BaseTest
 		test.log(LogStatus.SKIP, "Clicked on Element by using the Locator :- " + or.getProperty("amazonsearchbutton_xpath"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression"})
   public void endProcess() 
   {
 	  System.out.println("after Test.....");
