@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.listners.Listener"/>
+    <listener class-name="com.listners.RetryListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.testng.CheckBox1">
+      <class name="com.testng.TC_003">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="checkboxTest"/>
+          <include name="endProcess"/>
+          <include name="amazon"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.testng.CheckBox1 -->
-      <class name="com.testng.LinksTesting1">
-        <methods>
-          <include name="linktesting1"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.testng.LinksTesting1 -->
-      <class name="com.testng.RadioButton1">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="checkboxTest"/>
-        </methods>
-      </class> <!-- com.testng.RadioButton1 -->
+      </class> <!-- com.testng.TC_003 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

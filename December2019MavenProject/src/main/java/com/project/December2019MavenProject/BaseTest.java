@@ -40,6 +40,12 @@ public class BaseTest
 	
 	public static String screenshotFileName=null;
 	
+	static
+	{
+		Date dt=new Date();
+		screenshotFileName=dt.toString().replace(':', '_').replace(' ', '_')+".png";
+	}
+	
 	
 	public static void init() throws Exception
 	{
