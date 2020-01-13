@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.project.December2019MavenProject.BaseTest;
+import com.excelLibraries.BaseTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class TC_003 extends BaseTest

@@ -1,4 +1,4 @@
-package com.project.December2019MavenProject;
+package com.excelLibraries;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -19,6 +19,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -39,6 +40,7 @@ public class BaseTest
 	public static ExtentTest test;
 	
 	public static String screenshotFileName=null;
+	public static ExcelAPI xls=null;
 	
 	static
 	{
@@ -205,5 +207,13 @@ public class BaseTest
 	{
 		driver.quit();
 	}
+	
+	  @BeforeTest
+	  public void startProcess() throws Exception
+	  {
+		  System.out.println("iam beforetest.....");
+		  init();
+		  xls=new ExcelAPI(envprop.getProperty("suitea"));
+	  }
 
 }

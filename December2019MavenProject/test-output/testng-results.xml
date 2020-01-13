@@ -1,53 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
-    <line>
-      <![CDATA[Test started Running:amazon]]>
-    </line>
-    <line>
-      <![CDATA[<a href='C:\Users\DELL\git\December2019Morning6_30AMRepo\December2019MavenProject//success//Tue_Jan_07_07_13_58_IST_2020.png'> <img src='C:\Users\DELL\git\December2019Morning6_30AMRepo\December2019MavenProject//success//Tue_Jan_07_07_13_58_IST_2020.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Success:amazon]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="21835" started-at="2020-01-07T01:43:58Z" finished-at="2020-01-07T01:44:20Z">
+  <suite name="Default suite" duration-ms="1975" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
     <groups>
-      <group name="regression">
-        <method signature="TC_003.amazon()[pri:0, instance:com.testng.TC_003@1460a8c0]" name="amazon" class="com.testng.TC_003"/>
-      </group> <!-- regression -->
     </groups>
-    <test name="Test" duration-ms="21835" started-at="2020-01-07T01:43:58Z" finished-at="2020-01-07T01:44:20Z">
-      <class name="com.testng.TC_003">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.testng.TC_003@1460a8c0]" name="startProcess" is-config="true" duration-ms="15975" started-at="2020-01-07T01:43:58Z" finished-at="2020-01-07T01:44:14Z">
+    <test name="Default test" duration-ms="1975" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
+      <class name="com.excelLibraries.TC_004">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="startProcess" is-config="true" duration-ms="1852" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="16" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[{RunMode=y, col4=A4, col3=A3, col2=A2, col1=A1}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.testng.TC_003@1460a8c0]" name="amazon" duration-ms="3632" started-at="2020-01-07T01:44:14Z" finished-at="2020-01-07T01:44:18Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started Running:amazon]]>
-            </line>
-            <line>
-              <![CDATA[<a href='C:\Users\DELL\git\December2019Morning6_30AMRepo\December2019MavenProject//success//Tue_Jan_07_07_13_58_IST_2020.png'> <img src='C:\Users\DELL\git\December2019Morning6_30AMRepo\December2019MavenProject//success//Tue_Jan_07_07_13_58_IST_2020.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Success:amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.testng.TC_003@1460a8c0]" name="endProcess" is-config="true" duration-ms="1362" started-at="2020-01-07T01:44:19Z" finished-at="2020-01-07T01:44:20Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="10" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=n, col4=B4, col3=B3, col2=B2, col1=B1}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.testng.TC_003 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="2" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{RunMode=n, col4=C4, col3=C3, col2=C2, col1=C1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.excelLibraries.TC_004 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
