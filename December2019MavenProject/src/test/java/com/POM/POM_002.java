@@ -11,6 +11,7 @@ public class POM_002 extends BaseTest
 {
  
 	Login obj;
+	CustomerRegistration reg;
 	
   @BeforeTest
   public void startProcess() throws Exception 
@@ -21,7 +22,7 @@ public class POM_002 extends BaseTest
   }
   
   
-  @Test
+  @Test(enabled=false)
   public void login() 
   {
 	  obj = new Login(driver);
@@ -29,11 +30,13 @@ public class POM_002 extends BaseTest
 	  Assert.assertEquals(obj.validateCustomer(), "Authentication failed");
   }
   
+   
   
   @Test
-  public void registration()
+  public void registration() throws InterruptedException
   {
-	  
+	  reg=new CustomerRegistration(driver);
+	  reg.customerRegistration();
   }
 
   @AfterTest

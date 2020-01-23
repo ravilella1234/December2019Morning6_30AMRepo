@@ -1,50 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1975" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
+  <suite name="Default suite" duration-ms="23654" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1975" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
-      <class name="com.excelLibraries.TC_004">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="startProcess" is-config="true" duration-ms="1852" started-at="2020-01-13T01:52:52Z" finished-at="2020-01-13T01:52:54Z">
+    <test name="Default test" duration-ms="23654" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:11Z">
+      <class name="com.POM.POM_002">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="startProcess" is-config="true" duration-ms="15269" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="16" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{RunMode=y, col4=A4, col3=A3, col2=A2, col1=A1}]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="registration()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="registration" duration-ms="8336" started-at="2020-01-23T01:55:03Z" finished-at="2020-01-23T01:55:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="10" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{RunMode=n, col4=B4, col3=B3, col2=B2, col1=B1}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="endProcess" is-config="true" duration-ms="2" started-at="2020-01-23T01:55:11Z" finished-at="2020-01-23T01:55:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.excelLibraries.TC_004@7cd62f43]" name="f" duration-ms="2" started-at="2020-01-13T01:52:54Z" data-provider="getData" finished-at="2020-01-13T01:52:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{RunMode=n, col4=C4, col3=C3, col2=C2, col1=C1}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.excelLibraries.TC_004 -->
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.POM.POM_002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
