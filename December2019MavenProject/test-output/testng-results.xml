@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23654" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:11Z">
+  <suite name="Default suite" duration-ms="16341" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23654" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:11Z">
-      <class name="com.POM.POM_002">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="startProcess" is-config="true" duration-ms="15269" started-at="2020-01-23T01:54:48Z" finished-at="2020-01-23T01:55:03Z">
+    <test name="Default test" duration-ms="16341" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
+      <class name="com.frames.FrameDemo">
+        <test-method status="PASS" signature="frame()[pri:0, instance:com.frames.FrameDemo@22a67b4]" name="frame" duration-ms="16235" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="registration" duration-ms="8336" started-at="2020-01-23T01:55:03Z" finished-at="2020-01-23T01:55:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.POM.POM_002@6a41eaa2]" name="endProcess" is-config="true" duration-ms="2" started-at="2020-01-23T01:55:11Z" finished-at="2020-01-23T01:55:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.POM.POM_002 -->
+        </test-method> <!-- frame -->
+      </class> <!-- com.frames.FrameDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
