@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16341" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
+  <suite name="Default suite" duration-ms="75450" started-at="2020-01-29T06:49:21 IST" finished-at="2020-01-29T06:50:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16341" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
-      <class name="com.frames.FrameDemo">
-        <test-method status="PASS" signature="frame()[pri:0, instance:com.frames.FrameDemo@22a67b4]" name="frame" duration-ms="16235" started-at="2020-01-27T06:54:55 IST" finished-at="2020-01-27T06:55:12 IST">
+    <test name="Default test" duration-ms="75450" started-at="2020-01-29T06:49:21 IST" finished-at="2020-01-29T06:50:37 IST">
+      <class name="webtables.WebTables">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:webtables.WebTables@4bbfb90a]" name="setUp" is-config="true" duration-ms="43993" started-at="2020-01-29T06:49:22 IST" finished-at="2020-01-29T06:50:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- frame -->
-      </class> <!-- com.frames.FrameDemo -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dynamicTable()[pri:0, instance:webtables.WebTables@4bbfb90a]" name="dynamicTable" duration-ms="31336" started-at="2020-01-29T06:50:06 IST" finished-at="2020-01-29T06:50:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicTable -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webtables.WebTables@4bbfb90a]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-01-29T06:50:37 IST" finished-at="2020-01-29T06:50:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webtables.WebTables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
