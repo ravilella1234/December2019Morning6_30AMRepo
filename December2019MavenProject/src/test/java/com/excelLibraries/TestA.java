@@ -7,7 +7,7 @@ public class TestA
 {
 
 	@Test(dataProvider="getData")
-	public void testB(String RunMode,String col1,String col2,String col3,String col4)
+	public void testB(String RunMode,String col1,String col2,String col3)
 	{
 		System.out.println("test method....");
 	}
@@ -18,7 +18,7 @@ public class TestA
 		System.out.println("Data provider....");
 		ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\SuiteA.xlsx");
 		String sheetName="data";
-		String testCaseName="TestB";
+		String testCaseName="TestA";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 

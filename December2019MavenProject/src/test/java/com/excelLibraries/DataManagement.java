@@ -7,7 +7,7 @@ public class DataManagement
 	{
 		ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\SuiteA.xlsx");
 		String sheetName="data";
-		String testCaseName="TestB";
+		String testCaseName="LoginTest";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 

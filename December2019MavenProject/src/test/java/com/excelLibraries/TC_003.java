@@ -17,16 +17,18 @@ public class TC_003
   @Test(dataProvider = "dp")
   public void f(Hashtable<String, String> data) 
   {
-	 if(data.get("RunMode").equals("n"))
-		  throw new SkipException("Run mode set to no...");
+	 if(data.get("Runmode").equals("Y"))
+		 System.out.println(data.get("UserName"));
+	 	System.out.println(data.get("UserPassword"));
+		 // throw new SkipException("Run mode set to no...");
 	  
-		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe"); 
-	  	  driver=new ChromeDriver();
-		  driver.manage().window().maximize(); 
+		  //System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe"); 
+	  	  //driver=new ChromeDriver();
+		  //driver.manage().window().maximize(); 
 			
-			driver.get("https://www.facebook.com");	
-			driver.findElement(By.id("email")).sendKeys(data.get("col2"));
-			driver.findElement(By.id("pass")).sendKeys(data.get("col3"));
+			//driver.get("https://www.facebook.com");	
+			//driver.findElement(By.id("email")).sendKeys(data.get("col2"));
+			//driver.findElement(By.id("pass")).sendKeys(data.get("col3"));
   }
 
   @DataProvider

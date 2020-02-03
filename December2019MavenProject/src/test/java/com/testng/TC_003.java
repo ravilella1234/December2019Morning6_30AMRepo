@@ -18,7 +18,7 @@ public class TC_003 extends BaseTest
 	  System.out.println("before Test.....");
 	  
 	    init();
-		test=report.startTest("TC_005");
+		test=report.startTest("TC_003");
 		test.log(LogStatus.INFO, "initializing the Properties files (data, or, envronments, log4jconfig) ........");
 		
 		launchBrowser(btype);
